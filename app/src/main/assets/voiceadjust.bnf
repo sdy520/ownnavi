@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar voiceadjust;
+!slot <callCmd>;
+!slot <contact>;
+!start <callStart>;
+<callStart>:<callCmd>|<contact>;
+<callCmd>:加大音量|增加音量|调大音量;
+<contact>:减小音量|调小音量;
